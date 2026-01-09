@@ -1,0 +1,304 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Paresh"
+    },
+    {
+      "id": "2",
+      "name": "Ramesh"
+    },
+    {
+      "id": "3",
+      "name": "Jitesh"
+    }
+  ],
+  "config": {
+    "feePercent": 2,
+    "maxTransactionAmount": 10000
+  },
+  "transactions": [
+    {
+      "id": "6823",
+      "type": "credit",
+      "amount": 100,
+      "status": "success",
+      "createdAt": "2026-01-08T15:30:39.970Z",
+      "deleted": true
+    },
+    {
+      "id": "c711",
+      "type": "debit",
+      "amount": 10,
+      "recipientId": 2,
+      "status": "success",
+      "createdAt": "2026-01-08T15:36:46.127Z",
+      "deleted": true
+    },
+    {
+      "id": "9fb9",
+      "type": "fee",
+      "amount": 0.2,
+      "recipientId": 2,
+      "status": "success",
+      "createdAt": "2026-01-08T15:36:46.144Z"
+    },
+    {
+      "id": "9d22",
+      "type": "credit",
+      "amount": 2000,
+      "status": "success",
+      "createdAt": "2026-01-08T15:43:49.613Z",
+      "deleted": true
+    },
+    {
+      "id": "e69a",
+      "type": "debit",
+      "amount": 265,
+      "recipientId": 3,
+      "status": "success",
+      "createdAt": "2026-01-08T15:44:03.928Z",
+      "deleted": true
+    },
+    {
+      "id": "dbc6",
+      "type": "fee",
+      "amount": 5.3,
+      "recipientId": 3,
+      "status": "success",
+      "createdAt": "2026-01-08T15:44:03.953Z"
+    },
+    {
+      "id": "73c0",
+      "type": "debit",
+      "amount": 819,
+      "recipientId": 1,
+      "transferId": "07528944-9c30-4391-9949-455563263a7f",
+      "status": "failed",
+      "createdAt": "2026-01-08T16:36:21.136Z",
+      "reason": "Transfer failed"
+    },
+    {
+      "id": "66e5",
+      "type": "fee",
+      "amount": 16.38,
+      "recipientId": 1,
+      "transferId": "07528944-9c30-4391-9949-455563263a7f",
+      "status": "failed",
+      "createdAt": "2026-01-08T16:36:21.285Z",
+      "reason": "Fee reversed"
+    },
+    {
+      "id": "8502",
+      "type": "credit",
+      "amount": 4000,
+      "status": "success",
+      "createdAt": "2026-01-08T16:42:47.363Z",
+      "deleted": true
+    },
+    {
+      "id": "99d0",
+      "type": "debit",
+      "amount": 2990,
+      "recipientId": 1,
+      "transferId": "bb80463f-e016-417d-99bc-3639413e7def",
+      "status": "success",
+      "createdAt": "2026-01-08T16:43:20.553Z",
+      "deleted": true
+    },
+    {
+      "id": "8118",
+      "type": "fee",
+      "amount": 59.8,
+      "recipientId": 1,
+      "transferId": "bb80463f-e016-417d-99bc-3639413e7def",
+      "status": "success",
+      "createdAt": "2026-01-08T16:43:20.592Z"
+    },
+    {
+      "id": "92fc",
+      "type": "debit",
+      "amount": 22,
+      "recipientId": 3,
+      "transferId": "7e2c4f83-2521-42db-9516-311044dd26f2",
+      "status": "success",
+      "createdAt": "2026-01-08T16:46:01.824Z",
+      "deleted": true
+    },
+    {
+      "id": "3b5a",
+      "type": "debit",
+      "amount": 100,
+      "recipientId": 3,
+      "transferId": "384cfec2-7e3d-4c03-a62e-7e767a071422",
+      "status": "success",
+      "createdAt": "2026-01-08T16:46:33.206Z",
+      "deleted": true
+    },
+    {
+      "id": "e182",
+      "type": "fee",
+      "amount": 2,
+      "recipientId": 3,
+      "transferId": "384cfec2-7e3d-4c03-a62e-7e767a071422",
+      "status": "success",
+      "createdAt": "2026-01-08T16:46:33.225Z"
+    },
+    {
+      "id": "528e",
+      "type": "credit",
+      "amount": 1200,
+      "status": "success",
+      "createdAt": "2026-01-08T16:46:56.884Z",
+      "deleted": true
+    },
+    {
+      "id": "e8da",
+      "type": "credit",
+      "amount": 4000,
+      "status": "success",
+      "createdAt": "2026-01-08T17:04:21.536Z",
+      "deleted": true
+    },
+    {
+      "id": "ad2d",
+      "type": "debit",
+      "amount": 4005,
+      "recipientId": 1,
+      "transferId": "1d16e36c-4a39-40e5-b04f-8ce5349175cb",
+      "status": "success",
+      "createdAt": "2026-01-08T17:04:36.215Z",
+      "deleted": true
+    },
+    {
+      "id": "cb8c",
+      "type": "fee",
+      "amount": 80.1,
+      "recipientId": 1,
+      "transferId": "1d16e36c-4a39-40e5-b04f-8ce5349175cb",
+      "status": "success",
+      "createdAt": "2026-01-08T17:04:36.244Z"
+    },
+    {
+      "id": "00d1",
+      "type": "credit",
+      "amount": 4000,
+      "status": "success",
+      "createdAt": "2026-01-08T17:05:14.008Z"
+    },
+    {
+      "id": "a78b",
+      "type": "debit",
+      "amount": 4005,
+      "recipientId": 1,
+      "transferId": "08958903-2cc0-4439-8081-bdd1dd7b365e",
+      "status": "failed",
+      "createdAt": "2026-01-08T17:05:26.194Z",
+      "reason": "Transfer failed",
+      "deleted": true
+    },
+    {
+      "id": "f05b",
+      "type": "fee",
+      "amount": 80.1,
+      "recipientId": 1,
+      "transferId": "08958903-2cc0-4439-8081-bdd1dd7b365e",
+      "status": "failed",
+      "createdAt": "2026-01-08T17:05:26.227Z",
+      "reason": "Fee reversed"
+    },
+    {
+      "id": "f8f4",
+      "type": "debit",
+      "amount": 100,
+      "recipientId": 1,
+      "transferId": "2fcc3a22-d57a-49fd-8399-ab2e76576bff",
+      "status": "success",
+      "createdAt": "2026-01-08T17:05:55.782Z"
+    },
+    {
+      "id": "2ee7",
+      "type": "fee",
+      "amount": 2,
+      "recipientId": 1,
+      "transferId": "2fcc3a22-d57a-49fd-8399-ab2e76576bff",
+      "status": "success",
+      "createdAt": "2026-01-08T17:05:55.829Z"
+    },
+    {
+      "id": "c2cc",
+      "type": "debit",
+      "amount": 1000,
+      "recipientId": 3,
+      "transferId": "37f8c028-b8db-4b16-9552-dbc3743b0f33",
+      "status": "success",
+      "createdAt": "2026-01-08T17:33:37.008Z"
+    },
+    {
+      "id": "0cdf",
+      "type": "debit",
+      "amount": 6000,
+      "recipientId": 2,
+      "transferId": "1043b955-f141-474b-b4bb-ef8080f2c512",
+      "status": "success",
+      "createdAt": "2026-01-08T17:33:57.375Z"
+    },
+    {
+      "id": "cd6b",
+      "type": "credit",
+      "amount": 4341.4,
+      "status": "success",
+      "createdAt": "2026-01-08T17:34:42.163Z"
+    },
+    {
+      "id": "c6fa",
+      "type": "credit",
+      "amount": 100,
+      "status": "success",
+      "createdAt": "2026-01-08T17:35:12.250Z"
+    },
+    {
+      "id": "f23d",
+      "type": "debit",
+      "amount": 98.04,
+      "recipientId": 3,
+      "transferId": "6541796f-000c-423a-8c1d-ed9e9b5e1b2a",
+      "status": "success",
+      "createdAt": "2026-01-08T17:35:22.923Z"
+    },
+    {
+      "id": "0e3c",
+      "type": "fee",
+      "amount": 1.9608,
+      "recipientId": 3,
+      "transferId": "6541796f-000c-423a-8c1d-ed9e9b5e1b2a",
+      "status": "success",
+      "createdAt": "2026-01-08T17:35:22.948Z"
+    },
+    {
+      "id": "7bc5",
+      "type": "credit",
+      "amount": 200,
+      "status": "success",
+      "createdAt": "2026-01-08T17:35:36.132Z"
+    },
+    {
+      "id": "f318",
+      "type": "debit",
+      "amount": 196.08,
+      "recipientId": 2,
+      "transferId": "1633e53d-bdad-44d3-8e36-88e152a8c462",
+      "status": "success",
+      "createdAt": "2026-01-08T17:37:00.802Z"
+    },
+    {
+      "id": "5f7a",
+      "type": "fee",
+      "amount": 3.9216,
+      "recipientId": 2,
+      "transferId": "1633e53d-bdad-44d3-8e36-88e152a8c462",
+      "status": "pending",
+      "createdAt": "2026-01-08T17:37:00.821Z"
+    }
+  ]
+}

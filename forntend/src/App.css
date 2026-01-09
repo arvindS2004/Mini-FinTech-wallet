@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.reveal {
+  animation: reveal-enter 0.6s ease-out forwards;
+}
+
+@keyframes reveal-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.action-cards .card {
+  opacity: 0;
+  animation: card-in 0.5s ease forwards;
+}
+
+.action-cards .card:nth-child(1) { animation-delay: 0.1s; }
+.action-cards .card:nth-child(2) { animation-delay: 0.2s; }
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.app-header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+.header-corner {
+  position: absolute;
+  left: 10vh;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(
+    -90deg,
+    white 0%,
+    white 45%,
+    transparent 46%
+  );
+}
+
+.app-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.check-balance-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid #1a1a1a;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.check-balance-btn:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.balance-display {
+  background-color: white;
+  border: 3px solid #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.balance-display h3 {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.balance-amount {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.action-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20vh;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg,  #4f4f4f,#080808);
+}
+
+.card-icon {
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page-view {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.skeleton {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 24px;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header-corner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(
+      -90deg,
+      white 0%,
+      white 45%,
+      transparent 46%
+    );
+  }
+
+  .action-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: auto;
+    min-height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .app-header h1 {
+    font-size: 32px;
+  }
+
+  .balance-amount {
+    font-size: 36px;
+  }
+}
