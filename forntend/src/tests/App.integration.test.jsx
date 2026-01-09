@@ -73,16 +73,13 @@ describe('Integration: Transfer Money Flow', () => {
   test('user transfers money successfully and sees updated UI', async () => {
     render(<App />)
 
-    // Wait for dashboard
     await waitFor(() =>
       expect(screen.getByText(/welcome user/i)).toBeInTheDocument()
     )
 
-    // Show balance
     fireEvent.click(screen.getByText(/check balance/i))
     expect(screen.getByText(/₹ 5000.00/i)).toBeInTheDocument()
 
-    // Go to transfer screen
     fireEvent.click(screen.getByText(/transfer/i))
 
     fireEvent.change(screen.getByRole('combobox'), {
@@ -96,10 +93,8 @@ describe('Integration: Transfer Money Flow', () => {
     fireEvent.click(screen.getByRole('button', { name: /transfer/i }))
     fireEvent.click(screen.getByRole('button', { name: /confirm/i }))
 
-    // Back to dashboard
     fireEvent.click(screen.getByText(/← back/i))
 
-    // Assert transaction appears
     await waitFor(() => {
       expect(screen.getByText(/transfer to bob/i)).toBeInTheDocument()
     })

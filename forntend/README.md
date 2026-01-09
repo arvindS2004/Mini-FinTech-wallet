@@ -102,16 +102,16 @@ Jest + Testing Library (configured)
 
 Architecture Overview
 src/
-├─ api/               # Axios instance
-├─ hooks/             # Business logic & data fetching
-│  ├─ configure.js    # Fetches fee & limit config
-│  └─ transac.js      # Transactions, users, balance logic
+├─ api/ # Axios instance
+├─ hooks/ # Business logic & data fetching
+│ ├─ configure.js # Fetches fee & limit config
+│ └─ transac.js # Transactions, users, balance logic
 ├─ components/
-│  ├─ Actions.jsx     # Loading, ErrorState, AddMoney
-│  ├─ TransferMoney.jsx
-│  └─ TransactionHistory.jsx
-├─ App.jsx            # App shell & view orchestration
-└─ main.jsx           # App entry
+│ ├─ Actions.jsx # Loading, ErrorState, AddMoney
+│ ├─ TransferMoney.jsx
+│ └─ TransactionHistory.jsx
+├─ App.jsx # App shell & view orchestration
+└─ main.jsx # App entry
 
 Key Design Decisions
 
@@ -125,11 +125,11 @@ Soft delete preserves data integrity
 Custom hooks encapsulate domain logic cleanly
 
 Business Rules
-Rule	Description
-Fee	Default 2% of transfer amount
-Limit	Max transfer amount 10,000
-Status	pending → success / failed
-Fee reversal	Fee marked failed when transfer fails
+Rule Description
+Fee Default 2% of transfer amount
+Limit Max transfer amount 10,000
+Status pending → success / failed
+Fee reversal Fee marked failed when transfer fails
 
 All rules are configurable via data.json.
 
@@ -152,26 +152,26 @@ PATCH /transactions/:id
 DELETE /transactions/:id (soft delete via patch)
 
 Setup & Run
+
 1. Install dependencies
-npm install
+   npm install
 
 2. Start mock API
-npx json-server --watch data.json --port 4000
+   npx json-server --watch data.json --port 4000
 
 3. Start frontend
-npm run dev
-
+   npm run dev
 
 App will be available at:
 
 http://localhost:5173
 
 Scripts
-Command	Description
-npm run dev	Start Vite dev server
-npm run build	Production build
-npm run preview	Preview build
-npm run lint	Run ESLint
+Command Description
+npm run dev Start Vite dev server
+npm run build Production build
+npm run preview Preview build
+npm run lint Run ESLint
 Assumptions
 
 Single wallet (no authentication)
@@ -194,12 +194,12 @@ No pagination on large transaction lists
 
 Failure simulation is random, not deterministic
 
-
 Testing
 
 Jest and React Testing Library are used for testing.
 
 Covered Tests:
+
 - Unit and component tests for core UI and business logic:
   - Add Money validation and submission
   - Transfer Money validation (limit, balance, fee calculation)
@@ -212,6 +212,7 @@ Covered Tests:
   - Balance and history UI update
 
 Total:
+
 - 12 unit/component tests
 - 1 integration test for the most critical user flow
 
